@@ -19,6 +19,7 @@ export async function POST(request: Request) {
 
     const response = await openai.responses.create({
       model: "gpt-5.6",
+      store: false,
 
       instructions: `
 あなたは、仏教の考え方を参考に、ユーザーの悩みを穏やかに整理する対話支援者です。
