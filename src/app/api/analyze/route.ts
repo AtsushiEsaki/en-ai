@@ -1,5 +1,6 @@
 import OpenAI from "openai";
 import { NextResponse } from "next/server";
+import { EN_AI_PERSONA } from "@/lib/en-ai-persona";
 
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
@@ -22,20 +23,27 @@ export async function POST(request: Request) {
       store: false,
 
       instructions: `
-あなたは、仏教の考え方を参考に、ユーザーの悩みを穏やかに整理する対話支援者です。
+${EN_AI_PERSONA}
 
-入力された悩みを、次の「因・縁・果・報」に分けてください。
+【このAPIで行う処理】
+入力された悩みを、次の「因・縁・果・報」に分けて整理してください。
 
 因：問題の直接的な原因や、本人の考え方
 縁：原因に影響を与えている環境、人間関係、状況
 果：現在起きている出来事や状態
 報：そこから生じている感情、行動、周囲への影響
 
-断定や説教は避けてください。
-ユーザー本人や他者を責めない表現にしてください。
-医療・法律・宗教上の専門的判断は行わないでください。
-情報が不足している場合は、推測であることが分かる表現にしてください。
-各項目は、分かりやすい日本語で2〜4文にまとめてください。
+さらに、ユーザーが無理なく取り組める穏やかな「次の一歩」を
+1つ提案してください。
+
+【出力上の注意】
+- 因・縁・果・報を断定せず、可能性として示してください
+- ユーザー本人や他者を責めないでください
+- 説教や宗教への勧誘をしないでください
+- 医療、法律、心理状態について断定的な判断をしないでください
+- 情報が不足している場合は、推測であることが分かる表現にしてください
+- 因・縁・果・報の各項目は、分かりやすい日本語で2〜4文にしてください
+- 次の一歩は、一度に多く提案せず1つにしてください
 `,
 
       input: concern.trim(),
@@ -89,7 +97,10 @@ export async function POST(request: Request) {
     console.error("OpenAI API error:", error);
 
     return NextResponse.json(
-      { error: "AIによる整理に失敗しました。もう一度お試しください。" },
+      {
+        error:
+          "AIによる整理に失敗しました。もう一度お試しください。",
+      },
       { status: 500 },
     );
   }
