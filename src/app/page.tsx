@@ -5,7 +5,7 @@ export default function Home() {
     <main className="flex min-h-screen items-center justify-center bg-amber-50 px-6">
       <div className="max-w-2xl text-center">
         <p className="mb-4 text-sm tracking-[0.2em] text-amber-700">
-          仏教の智慧で、悩みを整理する
+          古くから伝わる智慧で、いま抱えている悩みを整理してみませんか？
         </p>
 
         <h1 className="mb-6 text-5xl font-bold text-stone-800">
@@ -13,8 +13,8 @@ export default function Home() {
         </h1>
 
         <p className="mb-8 text-lg leading-8 text-stone-600">
-          悩みや迷いを「因・縁・果・報」の視点から整理し、
-          あなた自身が次の一歩を見つけるための対話サービスです。
+          心の悩みには、原因となる「因」と、環境や人とのつながりである「縁」があります。
+en-AIとの対話で悩みが生まれた背景を整理し、心を軽くするための次の一歩を見つけませんか？
         </p>
 
         <Link
