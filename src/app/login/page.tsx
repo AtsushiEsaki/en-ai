@@ -111,7 +111,14 @@ export default function LoginPage() {
             {isLoading ? "ログイン中…" : "ログイン"}
           </button>
         </form>
-
+<p className="mt-5 text-center text-sm">
+  <Link
+    href="/forgot-password"
+    className="text-[#052c63] underline"
+  >
+    パスワードを忘れた方はこちら
+  </Link>
+</p>
         {error && (
           <p
             role="alert"
