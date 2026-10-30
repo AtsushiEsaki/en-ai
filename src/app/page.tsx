@@ -3,7 +3,6 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="bg-[#0ABAB5] text-[#374151]">
-
       {/* ファーストビュー */}
       <section className="flex min-h-dvh items-center justify-center px-4 py-12 sm:px-6">
         <div className="w-full max-w-4xl text-center">
@@ -29,18 +28,38 @@ export default function Home() {
 
           <Link
             href="/chat"
-            className="inline-block rounded-full bg-[#052c63] px-10 py-4 text-[16px] font-medium text-white transition hover:bg-[#0A417F]"
+            className="inline-block rounded-full bg-[#052c63] px-10 py-4 text-[16px] font-medium !text-white transition hover:bg-[#0A417F]"
           >
             悩みを整理してみる
           </Link>
+
+          <div className="mt-5 flex flex-wrap justify-center gap-6 text-sm">
+            <Link
+              href="/login"
+              className="font-medium !text-[#052c63] underline"
+            >
+              ログイン
+            </Link>
+
+            <Link
+              href="/signup"
+              className="font-medium !text-[#052c63] underline"
+            >
+              会員登録
+            </Link>
+          </div>
+
+          <p className="mt-4 text-sm text-[#374151]">
+            登録なしでも相談できます。
+            <br />
+            会員登録すると、相談履歴を保存して振り返れます。
+          </p>
         </div>
       </section>
-
 
       {/* 4つの智慧 */}
       <section className="px-5 pb-20 pt-8 sm:px-8 lg:pb-28">
         <div className="mx-auto max-w-5xl">
-
           <div className="mb-12 text-center">
             <h2 className="mb-6 text-[28px] font-bold leading-[1.5] sm:text-4xl">
               人生を、より実りのあるものにするために
@@ -63,7 +82,6 @@ export default function Home() {
             </p>
           </div>
 
-
           {/* 曼荼羅 */}
           <div className="mx-auto mb-16 max-w-3xl overflow-hidden rounded-[32px] bg-white p-3 shadow-lg sm:p-6">
             <img
@@ -73,10 +91,8 @@ export default function Home() {
             />
           </div>
 
-
           {/* 4項目 */}
           <div className="grid gap-6 md:grid-cols-2">
-
             <div className="rounded-3xl bg-white/85 p-7 shadow-sm backdrop-blur-sm sm:p-8">
               <p className="mb-2 text-xl font-bold text-[#052c63]">
                 ① 苦を知る
@@ -94,7 +110,6 @@ export default function Home() {
               </p>
             </div>
 
-
             <div className="rounded-3xl bg-white/85 p-7 shadow-sm backdrop-blur-sm sm:p-8">
               <p className="mb-2 text-xl font-bold text-[#052c63]">
                 ② 因を知る
@@ -111,7 +126,6 @@ export default function Home() {
                 「なぜ、この苦しみが生まれているのか」を見つめます。
               </p>
             </div>
-
 
             <div className="rounded-3xl bg-white/85 p-7 shadow-sm backdrop-blur-sm sm:p-8">
               <p className="mb-2 text-xl font-bold text-[#052c63]">
@@ -131,7 +145,6 @@ export default function Home() {
               </p>
             </div>
 
-
             <div className="rounded-3xl bg-white/85 p-7 shadow-sm backdrop-blur-sm sm:p-8">
               <p className="mb-2 text-xl font-bold text-[#052c63]">
                 ④ 行を実践する
@@ -149,11 +162,9 @@ export default function Home() {
                 人生を少しずつ変えていきます。
               </p>
             </div>
-
           </div>
         </div>
       </section>
-
 
       {/* 最終CTA */}
       <section className="px-5 pb-24 pt-10 text-center sm:px-8">
@@ -175,13 +186,12 @@ export default function Home() {
 
           <Link
             href="/chat"
-            className="inline-block rounded-full bg-[#052c63] px-10 py-4 text-[16px] font-medium text-white transition hover:bg-[#0A417F]"
+            className="inline-block rounded-full bg-[#052c63] px-10 py-4 text-[16px] font-medium !text-white transition hover:bg-[#0A417F]"
           >
             en-AIと話してみる
           </Link>
         </div>
       </section>
-
     </main>
   );
 }
