@@ -392,7 +392,12 @@ async function deleteConsultation() {
           >
             {turns.length > 0 ? "続けて相談する" : "相談内容"}
           </label>
-
+<p className="mb-3 text-sm leading-relaxed text-slate-700">
+  相談内容は回答を生成するためにAIサービス（OpenAI）に送信されます。
+  ログイン中は、相談と回答がご自身の相談履歴に保存されます。
+  ゲスト利用では、en-AIの相談履歴には保存されません。
+  氏名・住所・電話番号など、個人を特定できる情報の入力はお控えください。
+</p>
           <textarea
             id="concern"
             value={concern}
