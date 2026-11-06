@@ -7,30 +7,30 @@ export default function Home() {
       <section className="flex min-h-dvh items-center justify-center px-4 py-12 sm:px-6">
         <div className="w-full max-w-4xl text-center">
           <p className="mb-4 text-[28px] font-bold leading-[1.5] tracking-[0.02em] lg:text-[36px] lg:leading-[1.4]">
-            古くから受け継がれてきた智慧で、
-            <br />
-            人生をより実りのあるものに。
+            古くから受け継がれてきた智慧で
+            <br/>
+            人生を、より実りあるものに。
           </p>
 
-          <h1 className="mb-6 text-4xl font-bold sm:text-5xl">
-            en-AI
-          </h1>
+       <h1 className="mx-auto mb-6 w-full max-w-[280px] sm:max-w-[360px]">
+  <img
+    src="/en-ai-logo.png"
+    alt="en-AI"
+    className="block h-auto w-full"
+  />
+</h1>
 
-          <p className="mx-auto mb-8 max-w-2xl text-[16px] leading-[1.9] text-[#4B5563]">
-            en-AIは、古くから受け継がれてきた人生の智慧と
-            AIとの対話を通じて、
-            <br className="hidden sm:block" />
-            いま抱えている悩みを整理し、
-            <br className="hidden sm:block" />
-            これからをよりよく生きるための一歩を見つける
-            お手伝いをします。
-          </p>
+          <p className="mx-auto mb-8 max-w-2xl text-[18px] font-bold leading-[1.9] text-[#4B5563]">
+  en-AIは、古くから受け継がれてきた智慧と対話するツールです。
+  今抱えている問題や悩みを対話を通じて整理し、
+  これからをよりよく生きるための一歩を見つけるお手伝いをします。
+</p>
 
           <Link
             href="/chat"
             className="inline-block rounded-full bg-[#052c63] px-10 py-4 text-[16px] font-medium !text-white transition hover:bg-[#0A417F]"
           >
-            悩みを整理してみる
+            対話を始める
           </Link>
 
           <div className="mt-5 flex flex-wrap justify-center gap-6 text-sm">
@@ -50,7 +50,7 @@ export default function Home() {
           </div>
 
           <p className="mt-4 text-sm text-[#374151]">
-            登録なしでも相談できます。
+            登録なしでも対話できます。
             <br />
             会員登録すると、相談履歴を保存して振り返れます。
           </p>
@@ -97,11 +97,9 @@ export default function Home() {
               <p className="mb-2 text-xl font-bold text-[#052c63]">
                 ① 苦を知る
               </p>
-
               <p className="mb-4 font-semibold">
                 何に苦しんでいるのか
               </p>
-
               <p className="leading-[1.9] text-[#4B5563]">
                 まずは、自分の苦しみや迷いに気づくことから始めます。
                 不安、怒り、後悔、孤独、執着。
@@ -114,11 +112,9 @@ export default function Home() {
               <p className="mb-2 text-xl font-bold text-[#052c63]">
                 ② 因を知る
               </p>
-
               <p className="mb-4 font-semibold">
                 なぜ苦しみが生まれるのか
               </p>
-
               <p className="leading-[1.9] text-[#4B5563]">
                 物事は一つの原因だけで起きるとは限りません。
                 自分の考え方、過去の経験、相手との関係、周囲の環境。
@@ -131,11 +127,9 @@ export default function Home() {
               <p className="mb-2 text-xl font-bold text-[#052c63]">
                 ③ 願いを立てる
               </p>
-
               <p className="mb-4 font-semibold">
                 どう生きたいのか
               </p>
-
               <p className="leading-[1.9] text-[#4B5563]">
                 悩みの背景が見えてきたら、
                 「これから、自分はどう生きたいのか」を考えます。
@@ -149,11 +143,9 @@ export default function Home() {
               <p className="mb-2 text-xl font-bold text-[#052c63]">
                 ④ 行を実践する
               </p>
-
               <p className="mb-4 font-semibold">
                 今日から何をするのか
               </p>
-
               <p className="leading-[1.9] text-[#4B5563]">
                 願いを持ったら、日々の行動へつなげます。
                 相手の話を丁寧に聞く。
