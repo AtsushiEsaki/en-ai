@@ -8,49 +8,44 @@ export default function Home() {
         <div className="w-full max-w-4xl text-center">
           <p className="mb-4 text-[28px] font-bold leading-[1.5] tracking-[0.02em] lg:text-[36px] lg:leading-[1.4]">
             古くから受け継がれてきた智慧で
-            <br/>
+            <br />
             人生を、より実りあるものに。
           </p>
 
-       <h1 className="mx-auto mb-6 w-full max-w-[280px] sm:max-w-[360px]">
-  <img
-    src="/en-ai-logo.png"
-    alt="en-AI"
-    className="block h-auto w-full"
-  />
-</h1>
+          <h1 className="mx-auto mb-6 w-full max-w-[280px] sm:max-w-[360px]">
+            <img
+              src="/en-ai-logo.png"
+              alt="en-AI"
+              className="block h-auto w-full"
+            />
+          </h1>
 
-          <p className="mx-auto mb-8 max-w-2xl text-[18px] font-bold leading-[1.9] text-[#4B5563]">
-  en-AIは、古くから受け継がれてきた智慧と対話するツールです。
-  今抱えている問題や悩みを対話を通じて整理し、
-  これからをよりよく生きるための一歩を見つけるお手伝いをします。
-</p>
+          <p className="mx-auto mb-8 max-w-2xl text-[18px] font-bold leading-[1.9] text-[#374151]">
+            en-AIは、古くから受け継がれてきた智慧と対話するツールです。
+            <br className="hidden sm:block" />
+            今抱えている問題や悩みを対話を通じて整理し、
+            <br className="hidden sm:block" />
+            これからをよりよく生きるための一歩を見つけるお手伝いをします。
+          </p>
 
           <Link
             href="/chat"
-            className="inline-block rounded-full bg-[#052c63] px-10 py-4 text-[16px] font-medium !text-white transition hover:bg-[#0A417F]"
+            className="inline-block rounded-full bg-[#052c63] px-10 py-4 text-[16px] font-medium text-white transition hover:bg-[#0A417F]"
           >
             対話を始める
           </Link>
 
           <div className="mt-5 flex flex-wrap justify-center gap-6 text-sm">
-            <Link
-              href="/login"
-              className="font-medium !text-[#052c63] underline"
-            >
+            <Link href="/login" className="font-medium !text-[#052c63] underline">
               ログイン
             </Link>
-
-            <Link
-              href="/signup"
-              className="font-medium !text-[#052c63] underline"
-            >
+            <Link href="/signup" className="font-medium !text-[#052c63] underline">
               会員登録
             </Link>
           </div>
 
           <p className="mt-4 text-sm text-[#374151]">
-            登録なしでも対話できます。
+            登録なしでも対話は出来ます。
             <br />
             会員登録すると、相談履歴を保存して振り返れます。
           </p>
@@ -58,28 +53,41 @@ export default function Home() {
       </section>
 
       {/* 4つの智慧 */}
-      <section className="px-5 pb-20 pt-8 sm:px-8 lg:pb-28">
+      <section className="px-5 pb-20 pt-16 sm:px-8 sm:pt-24 lg:pb-28">
         <div className="mx-auto max-w-5xl">
           <div className="mb-12 text-center">
-            <h2 className="mb-6 text-[28px] font-bold leading-[1.5] sm:text-4xl">
-              人生を、より実りのあるものにするために
-            </h2>
+           <svg
+  viewBox="0 0 160 16"
+  className="mx-auto mb-6 block h-4 w-40 text-[#052c63]"
+  aria-hidden="true"
+>
+  <path
+    d="M2 8 Q15 0 28 8 T54 8 T80 8 T106 8 T132 8 T158 8"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+  />
+</svg>
 
-            <p className="mx-auto max-w-2xl text-[16px] leading-[1.9] text-[#4B5563]">
-              古くから、人は
-              <br />
-              「なぜ苦しむのか」
-              <br />
-              「どう生きればよいのか」
-              <br />
-              を考え続けてきました。
+<h2 className="mb-8 text-3xl font-bold leading-relaxed sm:text-4xl">
+  en-AIの成り立ちをもっとよく知る
+</h2>
+            <p className="mx-auto mb-8 max-w-2xl text-xl font-bold leading-relaxed sm:text-2xl">
+              人生を実りのあるものにするためにどう生きたらいいのか？
             </p>
 
-            <p className="mx-auto mt-5 max-w-2xl text-[16px] leading-[1.9] text-[#4B5563]">
-              en-AIでは、そこから受け継がれてきた智慧を、
-              <br className="hidden sm:block" />
-              4つの流れで捉えています。
-            </p>
+            <div className="mx-auto max-w-2xl space-y-5 text-left text-base leading-[1.9] text-[#374151]">
+              <p>古くから、人は</p>
+
+              <p>
+                「思い通りにならないことに出会い、様々な苦しみを経験し」、それを乗り越えていくために「どう生きればよいのか」を考え続け、多くの賢者が言葉や書物に残してきました。
+              </p>
+
+              <p>
+                en-AIでは、そこから受け継がれてきた智慧を、簡単にわかりやすくするための４つの流れで捉えて、皆様の苦しみ、悲しみを整理していきます。
+              </p>
+            </div>
           </div>
 
           {/* 曼荼羅 */}
@@ -97,9 +105,7 @@ export default function Home() {
               <p className="mb-2 text-xl font-bold text-[#052c63]">
                 ① 苦を知る
               </p>
-              <p className="mb-4 font-semibold">
-                何に苦しんでいるのか
-              </p>
+              <p className="mb-4 font-semibold">何に苦しんでいるのか</p>
               <p className="leading-[1.9] text-[#4B5563]">
                 まずは、自分の苦しみや迷いに気づくことから始めます。
                 不安、怒り、後悔、孤独、執着。
@@ -112,9 +118,7 @@ export default function Home() {
               <p className="mb-2 text-xl font-bold text-[#052c63]">
                 ② 因を知る
               </p>
-              <p className="mb-4 font-semibold">
-                なぜ苦しみが生まれるのか
-              </p>
+              <p className="mb-4 font-semibold">なぜ苦しみが生まれるのか</p>
               <p className="leading-[1.9] text-[#4B5563]">
                 物事は一つの原因だけで起きるとは限りません。
                 自分の考え方、過去の経験、相手との関係、周囲の環境。
@@ -127,9 +131,7 @@ export default function Home() {
               <p className="mb-2 text-xl font-bold text-[#052c63]">
                 ③ 願いを立てる
               </p>
-              <p className="mb-4 font-semibold">
-                どう生きたいのか
-              </p>
+              <p className="mb-4 font-semibold">どう生きたいのか</p>
               <p className="leading-[1.9] text-[#4B5563]">
                 悩みの背景が見えてきたら、
                 「これから、自分はどう生きたいのか」を考えます。
@@ -143,9 +145,7 @@ export default function Home() {
               <p className="mb-2 text-xl font-bold text-[#052c63]">
                 ④ 行を実践する
               </p>
-              <p className="mb-4 font-semibold">
-                今日から何をするのか
-              </p>
+              <p className="mb-4 font-semibold">今日から何をするのか</p>
               <p className="leading-[1.9] text-[#4B5563]">
                 願いを持ったら、日々の行動へつなげます。
                 相手の話を丁寧に聞く。
@@ -158,7 +158,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 最終CTA */}
+      {/* 最後の対話ボタン */}
       <section className="px-5 pb-24 pt-10 text-center sm:px-8">
         <div className="mx-auto max-w-3xl">
           <h2 className="mb-6 text-[28px] font-bold leading-[1.5] sm:text-3xl">
@@ -178,7 +178,7 @@ export default function Home() {
 
           <Link
             href="/chat"
-            className="inline-block rounded-full bg-[#052c63] px-10 py-4 text-[16px] font-medium !text-white transition hover:bg-[#0A417F]"
+            className="inline-block rounded-full bg-[#052c63] px-10 py-4 text-[16px] font-medium text-white transition hover:bg-[#0A417F]"
           >
             en-AIと話してみる
           </Link>
